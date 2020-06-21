@@ -1,3 +1,3 @@
-module github.com/andrzejd-pl/configuration-loader
+module github.com/andrzejd-pl/configuration_loader
 
 go 1.14
