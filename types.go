@@ -1,4 +1,4 @@
-package configuration_loader
+package configload
 
 import (
 	"encoding/json"

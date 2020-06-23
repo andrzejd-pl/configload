@@ -1,4 +1,4 @@
-# configuration_loader
+# configload
 
 This is a [golang](https://golang.org/) package to simple load and save configuration for application.
 
@@ -6,9 +6,7 @@ This is a [golang](https://golang.org/) package to simple load and save configur
 
 ### Importing
 
-```go
-import "github.com/andrzejd-pl/configuration_loader"
-```
+`import "github.com/andrzejd-pl/configload"`
 
 ### Json files
 
@@ -16,10 +14,10 @@ import "github.com/andrzejd-pl/configuration_loader"
 
 ```go
 package main
-import "github.com/andrzejd-pl/configuration_loader"
+import "github.com/andrzejd-pl/configload"
 func main() {
     //...
-    configLoader := configuration_loader.NewJsonFileConfiguration("config.json", &configStruct)
+    configLoader := configload.NewJsonFileConfiguration("config.json", &configStruct)
     configLoader.LoadFromFile()
     //...
 }
@@ -29,10 +27,10 @@ func main() {
 
 ```go
 package main
-import "github.com/andrzejd-pl/configuration_loader"
+import "github.com/andrzejd-pl/configload"
 func main() {
     //...
-    configLoader := configuration_loader.NewJsonFileConfiguration("config.json", &configStruct)
+    configLoader := configload.NewJsonFileConfiguration("config.json", &configStruct)
     configLoader.SaveToFile()
     //...
 }

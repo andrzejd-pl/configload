@@ -1,4 +1,4 @@
-package configuration_loader
+package configload
 
 import "os"
 
@@ -11,7 +11,7 @@ type jsonFileConfiguration struct {
 	jsonConfiguration
 }
 
-func NewJsonFileConfiguration(filePath string, jsonScheme interface{}) FileConfigurable {
+func NewJsonFileConfiguration(filePath string, jsonScheme interface{}) *jsonFileConfiguration {
 	return &jsonFileConfiguration{
 		fileConfiguration: fileConfiguration{filePath: filePath},
 		jsonConfiguration: jsonConfiguration{scheme: jsonScheme},
